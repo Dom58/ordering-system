@@ -14,14 +14,14 @@ module.exports = {
 
     try {
 
-      const items = await Items.find();
+      const items = await Items.find().populate('userId');
 
       if (items.length <= 0) {
         return {
           status: 404,
           error: 'No item created yet!'
         };
-      }
+      } 
       return {
         message: 'All items fetched',
         data: items,

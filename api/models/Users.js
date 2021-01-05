@@ -48,5 +48,16 @@ module.exports = {
             maxLength: 40,
             defaultsTo: 'user'
         },
+
+        // Add a reference to Order
+        orders: {
+            collection: 'orders',
+            via: 'userId'
+        },
+        // Add a reference to Order
+        items: {
+            collection: 'items',
+            via: 'userId'
+        },
     }
 }

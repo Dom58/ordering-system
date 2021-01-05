@@ -27,6 +27,8 @@ module.exports = {
         description: 'Ordering Status',
         defaultsTo: false
       },
+
+      
   
       //  ╔═╗╔╦╗╔╗ ╔═╗╔╦╗╔═╗
       //  ║╣ ║║║╠╩╗║╣  ║║╚═╗
@@ -36,7 +38,14 @@ module.exports = {
       //  ╔═╗╔═╗╔═╗╔═╗╔═╗╦╔═╗╔╦╗╦╔═╗╔╗╔╔═╗
       //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
       //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
-  
+      
+      // Add a reference to User
+      userId: {
+        model: 'users'
+      },
+      itemId: {
+        model: 'items'
+      }
     },
   
   };

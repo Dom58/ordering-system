@@ -16,7 +16,6 @@ module.exports = {
       required: true,
     },
   },
-
   exits: {
     success: {
       description: 'Fetch Order'
@@ -34,7 +33,7 @@ module.exports = {
       const orders = await Orders.find({
         where: {userId: id},
         // select: ['name']
-    });
+    }).populate('userId').populate('itemId');
 
       if (orders.length <= 0) {
         return {
@@ -49,7 +48,8 @@ module.exports = {
 
     } catch (error) {
       return {
-        error
+        status: 500,
+        error: 'Internal Server Error! Please try again later'
       }
     }
   }

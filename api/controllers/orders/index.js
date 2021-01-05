@@ -11,10 +11,9 @@ module.exports = {
   description: 'Fetch all Orders',
 
   fn: async function (req, res) {
-
     try {
 
-      const orders = await Orders.find();
+      const orders = await Orders.find().populate('userId');;
 
       if (orders.length <= 0) {
         return {

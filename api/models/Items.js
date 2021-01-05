@@ -55,6 +55,17 @@ module.exports = {
     //  ╠═╣╚═╗╚═╗║ ║║  ║╠═╣ ║ ║║ ║║║║╚═╗
     //  ╩ ╩╚═╝╚═╝╚═╝╚═╝╩╩ ╩ ╩ ╩╚═╝╝╚╝╚═╝
 
+    // Add a reference to Order
+    orders: {
+      collection: 'orders',
+      via: 'itemId'
+    },
+
+    // Add a reference to users one-to-many
+    userId: {
+      model: 'users'
+    },
+
   },
 
 };

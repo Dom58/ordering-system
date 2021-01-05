@@ -56,7 +56,7 @@ Create a service for an ordering system to:
 | GET     |  /api/orders/me/:id    | Get all my Orders     |
 
 ## HEROKU  & Swagger API Documentation 
-* You may read the ordering system documentation using this Heroku URL [Visit the link]( https://) or copy this link `https://`
+* You may read the ordering system documentation using this Heroku URL [Visit the link]( https://ordering-system-api.herokuapp.com/) or copy this link `https://ordering-system-api.herokuapp.com/`
 
 
 ### Version info
