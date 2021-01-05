@@ -133,5 +133,4 @@ lib-cov
 *.out
 *.pid
 .env
-config/env/*
 
